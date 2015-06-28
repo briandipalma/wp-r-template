@@ -1,0 +1,25 @@
+{
+  "name": "wp-r-template",
+  "version": "1.0.0",
+  "description": "ES2015+ Babel, Webpack and React project template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briandipalma/wp-r-template.git"
+  },
+  "keywords": [
+    "webpack",
+    "React",
+    "ES2015",
+    "Babel"
+  ],
+  "author": "Brian Di Palma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/briandipalma/wp-r-template/issues"
+  },
+  "homepage": "https://github.com/briandipalma/wp-r-template#readme"
+}
