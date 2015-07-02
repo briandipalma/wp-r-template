@@ -1,5 +1,7 @@
-import io from "socket.io-client";
+// import io from "socket.io-client";
 import React, {Component} from "react";
+
+import "../style/style.css";
 
 class Main extends Component {
 	render() {
@@ -9,4 +11,4 @@ class Main extends Component {
 
 React.render(<Main name="Brian" />, document.body);
 
-const socket = io("http://localhost:7070/chat");
+// const socket = io("http://localhost:7070/");
