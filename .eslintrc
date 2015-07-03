@@ -13,6 +13,7 @@
   },
   "rules": {
     "react/display-name": 1,
+    "react/jsx-uses-react": 1,
 
     "no-console": 2,
     "valid-jsdoc": [2, {"requireReturn": false, "requireParamDescription": false}],

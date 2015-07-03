@@ -4,8 +4,8 @@
   "description": "ES2015+ Babel, Webpack and React project template",
   "main": "index.js",
   "scripts": {
-    "wp": "webpack --progress --colors",
-    "wds": "webpack-dev-server --progress --colors",
+    "build": "webpack --progress --colors",
+    "start": "webpack-dev-server --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
