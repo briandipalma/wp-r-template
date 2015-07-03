@@ -7,17 +7,17 @@ import {
 import React from "react";
 
 import {createComponent} from "../test-utils";
-import MainComponent from "../../src/components/MainComponent-react";
+import App from "../../src/components/App-react";
 
-describe("Main", () => {
+describe("App", () => {
 	it("should display name", () => {
 		// Given.
 		const props = {
 			name: "Brian"
 		};
-		const mainComponentOutput = createComponent(MainComponent, props);
+		const appOutput = createComponent(App, props);
 
 		// Then.
-		deepEqual(mainComponentOutput, <div>Hello {props.name}</div>);
+		deepEqual(appOutput, <div>Hello {props.name}</div>);
 	});
 });
