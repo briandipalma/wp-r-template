@@ -11,6 +11,7 @@ module.exports = {
 		path: buildOutputDir,
 		filename: "bundle.js"
 	},
+	devtools: "eval",
 	module: {
 		loaders: [{
 			test: /\.css$/, loader: "style-loader!css-loader"
