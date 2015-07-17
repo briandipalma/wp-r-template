@@ -1,7 +1,7 @@
 import React from "react";
 // import io from "socket.io-client";
 
-import "../style/style.css";
+import "./main-style.css";
 import App from "./components/App-react";
 
 // const socket = io("http://localhost:7070/");

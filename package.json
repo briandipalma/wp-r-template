@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack --progress --colors",
     "start": "webpack-dev-server --progress --colors",
-    "test": "mocha --compilers js:babel/register app/test/ --recursive"
+    "test": "mocha --compilers js:babel/register app/**/*-test.js --recursive",
+    "test:w": "chokidar '**/*.js' -i 'node_modules' -c 'npm run --silent test'",
+    "test:d": "mocha --compilers js:babel/register app/**/*-test.js --recursive --debug-brk"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,7 @@
     "babel": "^5.6.14",
     "babel-core": "^5.6.15",
     "babel-loader": "^5.2.2",
+    "chokidar-cli": "^1.0.0",
     "css-loader": "^0.15.1",
     "eslint": "^0.24.0",
     "eslint-plugin-react": "^2.6.4",

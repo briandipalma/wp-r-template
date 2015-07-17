@@ -3,7 +3,7 @@
 var join = require("path").join;
 
 var buildOutputDir = join(__dirname, "dist");
-var appEntryPoint = join(__dirname, "app", "src", "main.js");
+var appEntryPoint = join(__dirname, "app", "main.js");
 
 module.exports = {
 	entry: appEntryPoint,

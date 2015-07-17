@@ -6,8 +6,8 @@ import {
 } from "mocha";
 import React from "react";
 
-import {createComponent} from "../test-utils";
-import App from "../../src/components/App-react";
+import {createComponent} from "./test-utils";
+import App from "../App-react";
 
 describe("App", () => {
 	it("should display name", () => {
