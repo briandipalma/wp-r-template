@@ -2,7 +2,6 @@
   "name": "wp-r-template",
   "version": "1.0.0",
   "description": "ES2015+ Babel, Webpack and React project template",
-  "main": "index.js",
   "scripts": {
     "build": "webpack --progress --colors",
     "start": "webpack-dev-server --progress --colors",
