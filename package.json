@@ -4,8 +4,7 @@
   "description": "ES2015+ Babel, Webpack and React project template",
   "scripts": {
     "build": "webpack --progress --colors",
-    "start": "webpack-dev-server --progress --colors",
-    "start:hot": "node ./server/index.js",
+    "start": "node ./server/index.js",
     "test": "mocha --compilers js:babel/register app/**/*-test.js --recursive",
     "test:w": "chokidar '**/*.js' -i 'node_modules' -c 'npm run --silent test'",
     "test:d": "mocha --compilers js:babel/register app/**/*-test.js --recursive --debug-brk"
