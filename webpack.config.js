@@ -4,39 +4,33 @@ var join = require("path").join;
 
 var webpack = require("webpack");
 
-var buildOutputDir = join(__dirname, "dist");
+var buildOutputDir = join(__dirname, "static");
 var appEntryPoint = join(__dirname, "app", "main.js");
 
 module.exports = {
 	entry: [
-		"webpack-dev-server/client?http://localhost:8080", // WebpackDevServer host and port
-		"webpack/hot/only-dev-server", // "only" prevents reload on syntax errors
+		"webpack-hot-middleware/client",
 		appEntryPoint
 	],
 	output: {
 		path: buildOutputDir,
 		filename: "bundle.js",
-		publicPath: "/dist/"
+		publicPath: "/static/"
 	},
-	devtools: "eval",
 	module: {
 		loaders: [{
 			test: /\.css$/,
+			include: /app/,
 			loader: "style-loader!css-loader"
 		}, {
 			test: /\.js$/,
-			exclude: /node_modules/,
+			include: /app/,
 			loader: "babel-loader"
-		}, {
-			test: /\-react\.js$/,
-			exclude: /node_modules/,
-			loaders: [
-				"react-hot",
-				"babel-loader"
-			]
 		}]
 	},
+	devtools: "eval",
 	plugins: [
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new webpack.NoErrorsPlugin()
 	]
 };

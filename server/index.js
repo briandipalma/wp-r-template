@@ -1,15 +1,28 @@
 "use strict";
 
+var join = require("path").join;
+
+var express = require("express");
 var webpack = require("webpack");
-var WebpackDevServer = require("webpack-dev-server");
+var webpackDevMiddleware = require("webpack-dev-middleware");
+var webpackHotMiddleware = require("webpack-hot-middleware");
 
 var config = require("../webpack.config");
 
-var webpackDevServer = new WebpackDevServer(webpack(config), {
-	publicPath: config.output.publicPath,
-	hot: true,
-	historyApiFallback: true
-});
+var devMiddlewareOptions = {
+	noInfo: true,
+	publicPath: config.output.publicPath
+};
+var indexPage = join(__dirname, "..", "index.html");
+
+var app = express();
+var compiler = webpack(config);
+var hmrMiddleware = webpackHotMiddleware(compiler);
+var devMiddleware = webpackDevMiddleware(compiler, devMiddlewareOptions);
+
+function allRoutesHandler(req, res) {
+	res.sendFile(indexPage);
+}
 
 function logListenEvents(err, result) {
 	/* eslint-disable no-console */
@@ -21,4 +34,9 @@ function logListenEvents(err, result) {
 	/* eslint-enable no-console */
 }
 
-webpackDevServer.listen(8080, "localhost", logListenEvents);
+app.use(devMiddleware);
+app.use(hmrMiddleware);
+
+app.get("*", allRoutesHandler);
+
+app.listen(8080, "localhost", logListenEvents);
