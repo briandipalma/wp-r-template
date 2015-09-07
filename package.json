@@ -5,9 +5,9 @@
   "scripts": {
     "build": "webpack --progress --colors",
     "start": "node ./server/index.js",
-    "test": "mocha --compilers js:babel/register app/**/*-test.js --recursive",
+    "test": "set BABEL_ENV=test; export BABEL_ENV=test; mocha --compilers js:babel/register app/**/*-test.js --recursive",
     "test:w": "chokidar '**/*.js' -i 'node_modules' -c 'npm run --silent test'",
-    "test:d": "mocha --compilers js:babel/register app/**/*-test.js --recursive --debug-brk"
+    "test:d": "set BABEL_ENV=test; export BABEL_ENV=test; mocha --compilers js:babel/register app/**/*-test.js --recursive --debug-brk"
   },
   "repository": {
     "type": "git",
