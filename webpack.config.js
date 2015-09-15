@@ -28,7 +28,7 @@ module.exports = {
 			loader: "babel-loader"
 		}]
 	},
-	devtools: "eval",
+	devtool: "eval-source-map",
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NoErrorsPlugin()
