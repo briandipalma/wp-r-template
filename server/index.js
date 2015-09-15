@@ -21,6 +21,10 @@ var hmrMiddleware = webpackHotMiddleware(compiler);
 var devMiddleware = webpackDevMiddleware(compiler, devMiddlewareOptions);
 
 function allRoutesHandler(req, res) {
+	/* eslint-disable no-console */
+	console.log("Request for", req.url);
+	/* eslint-enable no-console */
+
 	res.sendFile(indexPage);
 }
 
