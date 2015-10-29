@@ -1,24 +1,22 @@
-"use strict";
+import {join} from "path";
 
-var join = require("path").join;
+import express from "express";
+import webpack from "webpack";
+import webpackDevMiddleware from "webpack-dev-middleware";
+import webpackHotMiddleware from "webpack-hot-middleware";
 
-var express = require("express");
-var webpack = require("webpack");
-var webpackDevMiddleware = require("webpack-dev-middleware");
-var webpackHotMiddleware = require("webpack-hot-middleware");
+import config from "../webpack.config";
 
-var config = require("../webpack.config");
-
-var devMiddlewareOptions = {
+const devMiddlewareOptions = {
 	noInfo: true,
 	publicPath: config.output.publicPath
 };
-var indexPage = join(__dirname, "..", "index.html");
+const indexPage = join(__dirname, "..", "index.html");
 
-var app = express();
-var compiler = webpack(config);
-var hmrMiddleware = webpackHotMiddleware(compiler);
-var devMiddleware = webpackDevMiddleware(compiler, devMiddlewareOptions);
+const app = express();
+const compiler = webpack(config);
+const hmrMiddleware = webpackHotMiddleware(compiler);
+const devMiddleware = webpackDevMiddleware(compiler, devMiddlewareOptions);
 
 function allRoutesHandler(req, res) {
 	/* eslint-disable no-console */
