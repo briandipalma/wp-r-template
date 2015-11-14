@@ -1,7 +1,16 @@
-import React, {Component} from "react";
+import React, {
+	Component,
+	PropTypes
+} from "react";
 
-export default class App extends Component {
+class App extends Component {
 	render() {
-		return <div>Hello {this.props.name}</div>;
+		return <div>{`Hello ${this.props.name}`}</div>;
 	}
 }
+
+App.propTypes = {
+	name: PropTypes.string
+};
+
+export default App;

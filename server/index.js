@@ -26,7 +26,7 @@ function allRoutesHandler(req, res) {
 	res.sendFile(indexPage);
 }
 
-function logListenEvents(err, result) {
+function logListenEvents(err) {
 	/* eslint-disable no-console */
 	if (err) {
 		console.log(err);

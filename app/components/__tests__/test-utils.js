@@ -1,4 +1,4 @@
-import React, {createElement} from "react";
+import {createElement} from "react";
 import {createRenderer} from "react/lib/ReactTestUtils";
 
 export function createComponent(component, props, ...children) {

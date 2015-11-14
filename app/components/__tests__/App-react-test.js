@@ -18,6 +18,6 @@ describe("App", () => {
 		const appOutput = createComponent(App, props);
 
 		// Then.
-		deepEqual(appOutput, <div>Hello {props.name}</div>);
+		deepEqual(appOutput, <div>{`Hello ${props.name}`}</div>);
 	});
 });
