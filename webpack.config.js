@@ -1,11 +1,11 @@
-"use strict";
+"use strict"; // eslint-disable-line
 
-var join = require("path").join;
+const join = require("path").join;
 
-var webpack = require("webpack");
+const webpack = require("webpack");
 
-var buildOutputDir = join(__dirname, "static");
-var appEntryPoint = join(__dirname, "app", "main.js");
+const buildOutputDir = join(__dirname, "static");
+const appEntryPoint = join(__dirname, "app", "main.js");
 
 module.exports = {
 	entry: [
