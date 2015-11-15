@@ -5,6 +5,7 @@
   "scripts": {
     "build": "webpack --progress --colors",
     "lint": "eslint .",
+    "pretest": "npm run lint",
     "start": "babel-node ./server/index.js",
     "test": "set BABEL_ENV=test; export BABEL_ENV=test; mocha --compilers js:babel/register app/**/*-test.js --recursive",
     "test:w": "chokidar '**/*.js' -i 'node_modules' -c 'npm run --silent test'",
