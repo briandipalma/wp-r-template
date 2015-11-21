@@ -7,9 +7,10 @@
     "lint": "eslint .",
     "pretest": "npm run lint",
     "start": "babel-node ./server/index.js",
-    "test": "set BABEL_ENV=test; export BABEL_ENV=test; mocha --compilers js:babel/register app/**/*-test.js --recursive",
-    "test:w": "chokidar '**/*.js' -i 'node_modules' -c 'npm run --silent test'",
-    "test:d": "set BABEL_ENV=test; export BABEL_ENV=test; mocha --compilers js:babel/register app/**/*-test.js --recursive --debug-brk"
+    "hmr": "set BABEL_ENV=hmr; export BABEL_ENV=hrm; babel-node ./server/index.js",
+    "test": "mocha --compilers js:babel-core/register app/**/*-test.js --recursive",
+    "test:d": "mocha --compilers js:babel-core/register app/**/*-test.js --recursive --debug-brk",
+    "test:w": "chokidar '**/*.js' -i 'node_modules' -c 'npm run --silent test'"
   },
   "repository": {
     "type": "git",
@@ -28,10 +29,13 @@
   },
   "homepage": "https://github.com/briandipalma/wp-r-template#readme",
   "devDependencies": {
-    "babel": "^5.6.14",
-    "babel-core": "^5.6.15",
-    "babel-loader": "^5.2.2",
+    "babel-cli": "^6.1.18",
+    "babel-core": "^6.1.21",
+    "babel-loader": "^6.1.0",
     "babel-plugin-react-transform": "^1.0.3",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-stage-3": "^6.1.18",
     "chokidar-cli": "^1.0.0",
     "css-loader": "^0.23.0",
     "eslint": "^1.3.1",
@@ -50,8 +54,8 @@
     "webpack-hot-middleware": "^2.0.0"
   },
   "dependencies": {
-    "react": "^0.14.0-beta3",
-    "react-dom": "^0.14.0-beta3",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
     "socket.io-client": "^1.3.5"
   }
 }
