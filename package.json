@@ -8,8 +8,8 @@
     "pretest": "npm run lint",
     "start": "babel-node ./server/index.js",
     "hmr": "set BABEL_ENV=hmr; export BABEL_ENV=hrm; babel-node ./server/index.js",
-    "test": "mocha --compilers js:babel-core/register app/**/*-test.js --recursive",
-    "test:d": "mocha --compilers js:babel-core/register app/**/*-test.js --recursive --debug-brk",
+    "test": "mocha --compilers js:babel-register app/**/*-test.js --recursive",
+    "test:d": "mocha --compilers js:babel-register app/**/*-test.js --recursive --debug-brk",
     "test:w": "chokidar '**/*.js' -i 'node_modules' -c 'npm run --silent test'"
   },
   "repository": {
@@ -31,12 +31,13 @@
   "devDependencies": {
     "@briandipalma/eslint-config-bdp": "^1.0.0",
     "babel-cli": "^6.1.18",
-    "babel-core": "^6.1.21",
+    "babel-core": "^6.2.1",
     "babel-loader": "^6.1.0",
     "babel-plugin-react-transform": "^1.0.3",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
     "babel-preset-stage-3": "^6.1.18",
+    "babel-register": "^6.2.0",
     "chokidar-cli": "^1.0.0",
     "css-loader": "^0.23.0",
     "eslint": "^1.3.1",
