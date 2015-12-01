@@ -1,0 +1,12 @@
+[ignore]
+.*babylon
+.*babel
+.*fbjs
+
+[include]
+
+[libs]
+./interfaces/CSSModule.js
+
+[options]
+module.name_mapper='.*\(.css\)' -> 'empty/object'
