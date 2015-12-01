@@ -40,7 +40,7 @@
     "babel-register": "6.2.0",
     "chokidar-cli": "1.2.0",
     "css-loader": "0.23.0",
-    "eslint": "1.10.2",
+    "eslint": "1.10.3",
     "eslint-plugin-react": "3.11.2",
     "express": "4.13.3",
     "mocha": "2.3.4",
