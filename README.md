@@ -1,9 +1,9 @@
-# ES2015+ Babel, webpack and React template
+# ES2015+ Babel, webpack, React and Flow template
 [![Build Status](https://secure.travis-ci.org/briandipalma/wp-r-template.png)](http://travis-ci.org/briandipalma/wp-r-template)
 [![Dependency Status](https://david-dm.org/briandipalma/wp-r-template.png)](https://david-dm.org/briandipalma/wp-r-template)
 [![devDependency Status](https://david-dm.org/briandipalma/wp-r-template/dev-status.svg)](https://david-dm.org/briandipalma/wp-r-template#info=devDependencies)
 
-Template to get up and running building applications using ES2015+, webpack and React with hot module reloading.
+Template for building applications using ES2015+, webpack, React and Flow with hot module reloading.
 
 # Setup
 
