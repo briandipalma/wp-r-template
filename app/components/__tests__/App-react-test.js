@@ -1,3 +1,5 @@
+/* @flow */
+
 import {deepEqual} from "assert";
 
 import {

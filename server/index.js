@@ -1,3 +1,5 @@
+/* @flow */
+
 import {join} from "path";
 
 import express from "express";

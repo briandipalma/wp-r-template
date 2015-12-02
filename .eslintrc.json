@@ -1,3 +1,8 @@
 {
-  "extends": "@briandipalma/eslint-config-bdp/configurations/react"
+    "globals": {
+        "ReactClass": false,
+        "ReactElement": false
+    },
+    "parser": "babel-eslint",
+    "extends": "@briandipalma/eslint-config-bdp/configurations/react"
 }
