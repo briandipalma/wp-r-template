@@ -6,6 +6,7 @@
 [include]
 
 [libs]
+./flow-libs
 
 [options]
 module.name_mapper='.*\(.css\)' -> 'empty/object'
