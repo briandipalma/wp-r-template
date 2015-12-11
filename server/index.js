@@ -23,7 +23,7 @@ function logListenEvents(err) {
 	if (err) {
 		console.log(err); // eslint-disable-line
 	} else {
-		console.log(`Listening at localhost:${APP_PORT}`); // eslint-disable-line
+		console.log(`Listening on port ${APP_PORT}`); // eslint-disable-line
 	}
 }
 
@@ -32,4 +32,5 @@ app.use(hmrMiddleware);
 
 app.get("/", indexRouteHandler);
 
-app.listen(APP_PORT, "localhost", logListenEvents);
+// Don't bind to `localhost` as that will mean the server won't be accessible by other machines on the LAN.
+app.listen(APP_PORT, logListenEvents);
