@@ -32,7 +32,7 @@
   "devDependencies": {
     "@briandipalma/eslint-config-bdp": "1.1.2",
     "babel-cli": "6.3.17",
-    "babel-core": "6.3.17",
+    "babel-core": "6.3.21",
     "babel-eslint": "5.0.0-beta4",
     "babel-loader": "6.2.0",
     "babel-plugin-react-transform": "1.1.1",
