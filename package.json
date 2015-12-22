@@ -41,7 +41,7 @@
     "babel-preset-stage-3": "6.3.13",
     "babel-register": "6.3.13",
     "chokidar-cli": "1.2.0",
-    "css-loader": "0.23.0",
+    "css-loader": "0.23.1",
     "empty": "0.10.1",
     "eslint": "1.10.3",
     "eslint-plugin-react": "3.12.0",
