@@ -7,8 +7,7 @@
     "check": "flow check",
     "lint": "eslint .",
     "pretest": "npm run lint && npm run check",
-    "start": "babel-node ./server/index.js",
-    "hmr": "set BABEL_ENV=hmr; export BABEL_ENV=hrm; babel-node ./server/index.js",
+    "start": "set BABEL_ENV=hmr; export BABEL_ENV=hmr; babel-node ./server/index.js",
     "test": "mocha --compilers js:babel-register app/**/*-test.js --recursive",
     "test:d": "mocha --compilers js:babel-register app/**/*-test.js --recursive --debug-brk",
     "test:w": "chokidar '**/*.js' -i 'node_modules' -c 'npm run --silent test'"
