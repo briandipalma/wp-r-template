@@ -47,7 +47,7 @@
     "express": "4.13.3",
     "flow-bin": "0.20.1",
     "mocha": "2.3.4",
-    "node-libs-browser": "0.5.3",
+    "node-libs-browser": "1.0.0",
     "react-transform-catch-errors": "1.0.1",
     "react-transform-hmr": "1.0.1",
     "redbox-react": "1.2.0",
