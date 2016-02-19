@@ -42,7 +42,7 @@
     "chokidar-cli": "1.2.0",
     "css-loader": "0.23.1",
     "empty": "0.10.1",
-    "eslint": "1.10.3",
+    "eslint": "2.2.0",
     "eslint-plugin-react": "3.15.0",
     "express": "4.13.3",
     "flow-bin": "0.20.1",
