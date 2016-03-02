@@ -43,7 +43,7 @@
     "css-loader": "0.23.1",
     "empty": "0.10.1",
     "eslint": "2.2.0",
-    "eslint-plugin-react": "3.15.0",
+    "eslint-plugin-react": "4.1.0",
     "express": "4.13.3",
     "flow-bin": "0.20.1",
     "mocha": "2.3.4",
