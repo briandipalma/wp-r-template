@@ -1,21 +1,21 @@
 /* @flow */
 
-import {deepEqual} from "assert";
+import {deepEqual} from 'assert';
 
 import {
 	describe,
 	it
-} from "mocha";
-import React from "react";
+} from 'mocha';
+import React from 'react';
 
-import {createComponent} from "./test-utils";
-import App from "../App-react";
+import {createComponent} from './test-utils';
+import App from '../App-react';
 
-describe("App", () => {
-	it("should display name", () => {
+describe('App', () => {
+	it('should display name', () => {
 		// Given.
 		const props = {
-			name: "Brian"
+			name: 'Brian'
 		};
 		const appOutput = createComponent(App, props);
 

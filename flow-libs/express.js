@@ -3,7 +3,7 @@
 // Definitions by: Boris Yankov <https://github.com/borisyankov/>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-declare module "express" {
+declare module 'express' {
 	declare class Send {
 		(status: number, body?: any): Response;
 		(body: any): Response;

@@ -1,14 +1,14 @@
 /* @flow */
 
-import express from "express";
-import React from "react";
-import {renderToStaticMarkup} from "react-dom/server";
+import express from 'express';
+import React from 'react';
+import {renderToStaticMarkup} from 'react-dom/server';
 
 const IndexPage = () => {
 	return (
 		<html>
 			<head>
-				<meta charSet="utf-8"/>
+				<meta charSet="utf-8" />
 			</head>
 			<body>
 				<div id="container">

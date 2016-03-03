@@ -3,7 +3,7 @@
 import React, {
 	Component,
 	PropTypes
-} from "react";
+} from 'react';
 
 class App extends Component {
 	render(): ReactElement {

@@ -1,12 +1,12 @@
 /* @flow */
 
-import express from "express";
-import webpack from "webpack";
-import webpackDevMiddleware from "webpack-dev-middleware";
-import webpackHotMiddleware from "webpack-hot-middleware";
+import express from 'express';
+import webpack from 'webpack';
+import webpackDevMiddleware from 'webpack-dev-middleware';
+import webpackHotMiddleware from 'webpack-hot-middleware';
 
-import config from "../webpack.config";
-import {indexRouteHandler} from "./indexPage-react";
+import config from '../webpack.config';
+import {indexRouteHandler} from './indexPage-react';
 
 const APP_PORT = 8080;
 const devMiddlewareOptions = {
@@ -30,7 +30,7 @@ function logListenEvents(err) {
 app.use(devMiddleware);
 app.use(hmrMiddleware);
 
-app.get("/", indexRouteHandler);
+app.get('/', indexRouteHandler);
 
 // Don't bind to `localhost` as that will mean the server won't be accessible by other machines on the LAN.
 app.listen(APP_PORT, logListenEvents);
