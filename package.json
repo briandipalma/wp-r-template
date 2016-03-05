@@ -44,22 +44,19 @@
     "empty": "0.10.1",
     "eslint": "~2.3.0",
     "eslint-plugin-react": "~4.1.0",
-    "express": "4.13.3",
-    "flow-bin": "0.20.1",
-    "mocha": "2.3.4",
-    "node-libs-browser": "0.5.3",
-    "react-transform-catch-errors": "1.0.1",
-    "react-transform-hmr": "1.0.1",
-    "redbox-react": "1.2.0",
-    "socket.io": "1.4.4",
+    "express": "~4.13.4",
+    "flow-bin": "0.22.1",
+    "mocha": "~2.4.5",
+    "react-transform-catch-errors": "~1.0.2",
+    "react-transform-hmr": "~1.0.2",
+    "redbox-react": "~1.2.2",
     "style-loader": "0.13.0",
-    "webpack": "1.12.11",
+    "webpack": "~1.12.14",
     "webpack-dev-middleware": "1.5.1",
-    "webpack-hot-middleware": "2.6.0"
+    "webpack-hot-middleware": "~2.9.1"
   },
   "dependencies": {
-    "react": "0.14.6",
-    "react-dom": "0.14.6",
-    "socket.io-client": "1.4.4"
+    "react": "~0.14.7",
+    "react-dom": "~0.14.7"
   }
 }
