@@ -19,7 +19,7 @@ const IndexPage = () => {
 	);
 };
 
-export function indexRouteHandler(req: express.Request, res: express.Response) {
+export function indexRouteHandler(req: ExpressRequest, res: ExpressResponse) {
 	console.log(`Request for ${req.url}`); // eslint-disable-line
 
 	// JSX can't process DOCTYPE tags.

@@ -6,7 +6,7 @@ import React, {
 } from 'react';
 
 class App extends Component {
-	render(): ReactElement {
+	render() {
 		return <div>{`Hello ${this.props.name}`}</div>;
 	}
 }

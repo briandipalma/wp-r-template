@@ -1,7 +1,6 @@
 [ignore]
-.*babylon
-.*babel
 .*fbjs
+.*y18n
 
 [include]
 
