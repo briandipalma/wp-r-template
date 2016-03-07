@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/briandipalma/wp-r-template#readme",
   "devDependencies": {
-    "@briandipalma/eslint-config-bdp": "^6.0.0",
+    "@briandipalma/eslint-config-bdp": "^7.0.0",
     "babel-cli": "~6.6.5",
     "babel-core": "~6.6.5",
     "babel-eslint": "~5.0.0",
