@@ -1,8 +1,9 @@
 /* @flow */
 
-import express from 'express';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
+
+import type {ExpressRequest, ExpressResponse} from '../flowlibs/express';
 
 const IndexPage = () => {
 	return (

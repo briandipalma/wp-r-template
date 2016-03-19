@@ -5,3 +5,6 @@ declare class ExpressRequest {
 declare class ExpressResponse {
 	send(x: string): void;
 }
+
+export type {ExpressRequest};
+export type {ExpressResponse};
