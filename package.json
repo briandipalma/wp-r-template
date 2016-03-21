@@ -42,7 +42,7 @@
     "chokidar-cli": "1.2.0",
     "css-loader": "0.23.1",
     "empty": "0.10.1",
-    "enzyme": "^2.1.0",
+    "enzyme": "^2.2.0",
     "eslint": "2.2.0",
     "eslint-plugin-react": "~4.2.3",
     "express": "~4.13.4",
