@@ -1,6 +1,7 @@
 [ignore]
 .*fbjs
 .*y18n
+.*json5
 
 [include]
 
