@@ -1,7 +1,6 @@
 [ignore]
 .*/node_modules/fbjs/.*
 .*y18n
-.*json5
 
 [include]
 
@@ -9,3 +8,5 @@
 
 [options]
 module.name_mapper='.*\(.css\)' -> 'empty/object'
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe
+suppress_comment=\\(.\\|\n\\)*\\$FlowIssue
