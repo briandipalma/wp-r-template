@@ -1,8 +1,15 @@
-"use strict"; // eslint-disable-line
+/* @flow */
 
-const join = require('path').join;
+'use strict'; // eslint-disable-line
 
-const webpack = require('webpack');
+const {
+	join
+} = require('path');
+
+const {
+	HotModuleReplacementPlugin,
+	NoErrorsPlugin
+} = require('webpack');
 
 const buildOutputDir = join(__dirname, 'static');
 const appEntryPoint = join(__dirname, 'app', 'main.js');
@@ -30,7 +37,7 @@ module.exports = {
 	},
 	devtool: 'source-map',
 	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
-		new webpack.NoErrorsPlugin()
+		new HotModuleReplacementPlugin(),
+		new NoErrorsPlugin()
 	]
 };
